@@ -1,0 +1,18 @@
+<%= link_to 'Upload New PDF', new_pdf_path, class: "button" %>
+<table id="pdfs">
+  <tr>
+    <th>File Name</th>
+    <th>Link</th>
+    <th>Action</th>
+  </tr>
+  <% @pdf.each do |pdf| %>
+    <tr>
+      <td><%= pdf.document_file_name %></td>
+      <td>/?pdf_file=<%= pdf.get_file_name %></td>
+      <td>
+        <a href="/?pdf_file=<%= pdf.get_file_name %>">View</a>
+        <%= link_to 'Destroy',  pdf,  method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>

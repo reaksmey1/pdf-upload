@@ -1,0 +1,38 @@
+// Place all the styles related to the upload controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#pdfs {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#pdfs td, #pdfs th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#pdfs tr:nth-child(even){background-color: #f2f2f2;}
+
+#pdfs tr:hover {background-color: #ddd;}
+
+#pdfs th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: gray;
+  color: white;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
